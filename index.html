@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <title>BramsikkensDeveloper</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="background.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+    </div>
+    <nav id="mainNav">
+        <ul>
+            <li><a href="#introSection">home</a></li>
+            <li> <a href="#aboutSection">About</a></li>
+            <li> <a href="#portfolioSection">Portfolio</a> </li>
+            <li> <a href="#contactSection">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introSection" data-aos="zoom-in" data-aos-duration="3000">
+            <h1>
+                <span>
+                    Hello! I'm Bram
+                </span>
+                <br>
+                <span>
+                    I am a Developer
+                </span>
+            </h1>
+        </section>
+
+        <section id="aboutSection">
+            <div class="sectionTitle" data-aos="fade-up">
+                <h2>About</h2>
+                <span>Een beetje over mezelf</span>
+            </div>
+            <div class="sectionContent" id="AboutSectionContent">
+                <div id="AboutText">
+                    <img src="profilepic.jpg" />
+                    <p>I'm a Front-End Developer for ChowNow in Los Angeles, CA.
+                        I have serious passion for UI effects, animations and creating intuitive, dynamic user
+                        experiences.
+                        Let's make something special.
+                        CSS
+                        90%
+                        HTML
+                        90%
+                        React
+                        80%
+                        JavaScript
+                        80%
+                        Angular
+                        50%
+                        Node.js
+                        65%
+                        Ruby/Rails
+                        65%
+                        UI Design
+                        50%
+                        Photoshop
+                        60%
+                        Sketch
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="portfolioSection">
+            <div class="sectionTitle" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <span>Zelfgemaakte Projecten</span>
+            </div>
+            <div class="sectionContent" id="PortfolioSectionContent">
+                <ul>
+                    <li>
+                        <img src="webgoldencars.jpg" />
+
+                        <div class="overlay">
+                            <span>GOLDENCARS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="nimium.jpg" />
+                        <div class="overlay">
+                            <span>NIMIUM</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="flower.jpg" />
+                        <div class="overlay">
+                            <span>FLOWERS</span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+        <section id="contactSection">
+            <div class="sectionTitle" data-aos="fade-up">
+                <h2>Contact</h2>
+                <span>Stuur me een berichtje</span>
+            </div>
+            <div class="sectionContent" id="ContactSectionContent">
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Email" />
+                    <textarea placeholder="Bericht"> </textarea>
+                    <input type="submit" value="Verzend" />
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script src="Script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

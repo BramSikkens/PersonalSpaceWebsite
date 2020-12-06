@@ -1,0 +1,229 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #090a0f;
+}
+
+#mainNav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 15%;
+  z-index: 99;
+}
+
+#mainNav ul {
+  width: 100%;
+}
+
+#mainNav li {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5%;
+  cursor: pointer;
+}
+
+#mainNav li a {
+  cursor: pointer;
+  text-decoration: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgb(28 30 37) 0%,
+    rgba(19, 19, 19, 1) 88%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 1s ease;
+}
+
+#mainNav a:hover {
+  background: radial-gradient(
+    ellipse at center,
+    rgb(128 131 142) 0%,
+    rgb(72 72 72) 100%,
+    rgb(2 2 2) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+#introSection {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sectionTitle h2 {
+  font-size: 12rem;
+
+  color: #15151526;
+
+  transform: translate(0%, 35%);
+  z-index: -1;
+  background: radial-gradient(
+    ellipse at center,
+    rgb(28 30 37) 0%,
+    rgba(19, 19, 19, 1) 88%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionTitle span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.sectionContent {
+  width: 85%;
+  margin-top: 3%;
+}
+
+#ServiceSectionContent ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#ContactSectionContent form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+textarea {
+  width: 30%;
+  height: 3rem;
+  margin-bottom: 1%;
+  background-color: #0c131da1;
+  border: none;
+  border-radius: 15px;
+  padding: 2%;
+}
+
+form textarea {
+  height: 8rem;
+}
+
+form input[type="submit"] {
+  background-color: #ffba08;
+  height: auto;
+  padding: 1%;
+}
+
+#aboutSectionContent {
+  display: flex;
+  justify-content: center;
+}
+
+#PortfolioSectionContent ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#PortfolioSectionContent ul li {
+  width: 250px;
+  height: 250px;
+  background-color: #0b1018;
+  margin: 1%;
+  display: flex;
+  cursor: pointer;
+}
+
+#PortfolioSectionContent ul li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#PortfolioSectionContent ul li .overlay {
+  position: absolute;
+  background-color: #ffba0870;
+  width: 250px;
+  z-index: 5;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#PortfolioSectionContent ul li:hover .overlay {
+  opacity: 1;
+}
+
+.overlay span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#AboutText {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+}
+
+#AboutText img {
+  object-fit: cover;
+  width: 300px;
+  height: 270px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 52%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+#AboutText p {
+  text-align: center;
+  margin-top: 5%;
+  line-height: 2rem;
+}
